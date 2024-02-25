@@ -1,0 +1,19 @@
+{
+  "name": "e-commerce",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node --files src/ts/index.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2"
+  }
+}

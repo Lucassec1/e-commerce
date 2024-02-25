@@ -4,8 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-commerce</title>
+  <link rel="stylesheet" href="src/styles/index.css">
 </head>
 <body>
-  
+  <header class="header">
+    <h1 class="header__title">Bandage</h1>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__menu-item"><a href="#">Home</a></li>
+        <li class="header__menu-item">
+          <select name="Shop" id="shop-select" class="header__menu-select">
+            <option value="shop">Shop</option>
+          </select>
+        </li>
+        <li class="header__menu-item"><a href="#">About</a></li>
+        <li class="header__menu-item"><a href="#">Blog</a></li>
+        <li class="header__menu-item"><a href="#">Contact</a></li>
+        <li class="header__menu-item"><a href="#">Pages</a></li>
+      </ul>
+    </nav>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">
+            <img src="./src/image/icons/user.svg" alt="Login / Register">
+            <span class="header__menu-text">Login / Register</span>
+          </a>  
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">
+            <img src="./src/image/icons/search.svg" alt="Search">
+          </a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">
+            <img src="./src/image/icons/cart.svg" alt="Shopping Cart">
+            <span class="header__menu-text">1</span>
+          </a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">
+            <img src="./src/image/icons/heart.svg" alt="Heart">
+            <span class="header__menu-text">1</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </body>
 </html>

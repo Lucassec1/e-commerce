@@ -1,0 +1,151 @@
+@import url('../colors/colors.css');
+
+#slide {
+  background-color: var(--dark-background-color);
+  display: grid;
+  margin: 0 auto;
+  position: relative;
+}
+
+#slide.paused {
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none;
+  text-size-adjust: none;
+  user-select: none;
+}
+
+#slide.paused #slide__thumb {
+  opacity: 0;
+  transition: 250ms cubic-bezier(.17, .67, .83, .67);
+}
+
+#slide__elements {
+  display: grid;
+  grid-area: 1/1;
+}
+
+#slide__elements > * {
+  grid-area: 1/1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#slide__elements img {
+  display: block;
+  max-height: 800px;	
+  width: 100%;
+  object-fit: cover;
+}
+
+#slide__elements > .active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide__items {
+  position: relative;
+  max-height: 800px;
+}
+
+.slide__content {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--light-text-color);
+  z-index: 1;
+}
+
+.slide__content-title {
+  font-size: 58px;
+  line-height: 80px;
+}
+
+.slide__content-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.slide__content-button {
+  background-color: var(--primary-color);
+  padding: 15px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--light-text-color);
+}
+
+#slide__controls {
+  display: grid;
+  grid-area: 1/1;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+#slide__controls button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  /* padding-top: 130px; */
+  padding-inline: 20px;
+  position: relative;
+}
+
+#slide__controls > .prev__button {
+  margin-right: auto;
+}
+
+#slide__controls > .next__button {
+  margin-left: auto;
+}
+
+#slide__thumb {
+  display: flex;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 10%;
+  pointer-events: none;
+}
+
+#slide__thumb > span {
+  background-color: var(--light-background-color-semi);
+  display: block;
+  flex: 1;
+  height: 10px;
+  isolation: isolate;
+  margin: 20px 0.5px;
+  overflow: hidden;
+}
+
+#slide__thumb .slide__thumb-item.active {
+  animation: thumb forwards linear running;
+  background-color: var(--light-background-color);
+  display: block;
+  height: inherit;
+  transform: translateX(-100%);
+}
+
+#slide__thumb .slide__thumb-item.paused {
+  animation-play-state: paused;
+}
+
+@keyframes thumb {
+  to {
+    transform: initial;
+  }
+}

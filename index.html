@@ -8,48 +8,67 @@
 </head>
 <body>
   <header class="header">
-    <h1 class="header__title">Bandage</h1>
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li class="header__menu-item"><a href="#">Home</a></li>
-        <li class="header__menu-item">
-          <select name="Shop" id="shop-select" class="header__menu-select">
-            <option value="shop">Shop</option>
-          </select>
-        </li>
-        <li class="header__menu-item"><a href="#">About</a></li>
-        <li class="header__menu-item"><a href="#">Blog</a></li>
-        <li class="header__menu-item"><a href="#">Contact</a></li>
-        <li class="header__menu-item"><a href="#">Pages</a></li>
-      </ul>
-    </nav>
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">
-            <img src="./src/image/icons/user.svg" alt="Login / Register">
-            <span class="header__menu-text">Login / Register</span>
-          </a>  
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">
-            <img src="./src/image/icons/search.svg" alt="Search">
-          </a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">
-            <img src="./src/image/icons/cart.svg" alt="Shopping Cart">
-            <span class="header__menu-text">1</span>
-          </a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">
-            <img src="./src/image/icons/heart.svg" alt="Heart">
-            <span class="header__menu-text">1</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrapper">
+      <h1 class="header__title">Bandage</h1>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#">Home</a></li>
+          <li class="header__menu-item">
+            <select name="Shop" id="shop-select" class="header__menu-select">
+              <option value="shop">Shop</option>
+            </select>
+          </li>
+          <li class="header__menu-item"><a href="#">About</a></li>
+          <li class="header__menu-item"><a href="#">Blog</a></li>
+          <li class="header__menu-item"><a href="#">Contact</a></li>
+          <li class="header__menu-item"><a href="#">Pages</a></li>
+        </ul>
+      </nav>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">
+              <img class="header__menu-img" src="./src/image/icons/user.svg" alt="Login / Register">
+              <span class="header__menu-text">Login / Register</span>
+            </a>  
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">
+              <img class="header__menu-img" src="./src/image/icons/search.svg" alt="Search">
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">
+              <img class="header__menu-img" src="./src/image/icons/cart.svg" alt="Shopping Cart">
+              <span class="header__menu-text">1</span>
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">
+              <img class="header__menu-img" src="./src/image/icons/heart.svg" alt="Heart">
+              <span class="header__menu-text">1</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>   
+    <div id="slide">
+      <div id="slide__elements">
+        <div class="slide__items">
+          <div class="slide__content">
+            <h1 class="slide__content-title">GROCERIES DELIVERY</h2>
+            <p class="slide__content-text">We know how large objects will act, but things on a 
+              small scale just do not act that way.</p>
+            <a href="https://github.com"><button class="slide__content-button">Start Now</button></a>
+          </div>
+          <img src="./src/image/background/fast_food.svg" alt="French fries and nuggets">
+        </div>
+        <img src="./src/image/background/fast_food.svg" alt="French fries and nuggets">
+      </div>
+      <div id="slide__controls"></div>
+    </div>
   </header>
+
+  <script type="module" src="./dist/index.js"></script>
 </body>
 </html>

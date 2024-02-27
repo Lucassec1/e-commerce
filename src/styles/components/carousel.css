@@ -5,6 +5,7 @@
   display: grid;
   margin: 0 auto;
   position: relative;
+  width: 100%;
 }
 
 #slide.paused {
@@ -27,7 +28,6 @@
 
 #slide__elements > * {
   grid-area: 1/1;
-  width: 100vw;
   height: 100vh;
   opacity: 0;
   visibility: hidden;
@@ -48,6 +48,10 @@
 .slide__items {
   position: relative;
   max-height: 800px;
+}
+
+.slide__items img {
+  height: 800px;
 }
 
 .slide__content {

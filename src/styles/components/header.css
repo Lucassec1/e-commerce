@@ -80,13 +80,3 @@
 .header__menu-img + .header__menu-text {
   margin-left: 0.3rem;
 }
-
-.container {
-  position: absolute;
-  top: 100px;
-  width: 100%;
-}
-
-.container__image > img {
-  width: 100%;
-}

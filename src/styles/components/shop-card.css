@@ -1,0 +1,72 @@
+@import url('../colors/colors.css');
+
+.shop__card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.shop__card-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 70%;
+  padding: 80px 0;
+}
+
+.shop__card-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.shop__card-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  max-width: 333px;
+  height: 232px;
+  border: 1px solid var(--light-grey-color);
+}
+
+.shop__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 25px;
+  width: 45%;
+}
+
+.card__item-1 {
+  background-image: url('../../image/products/candy_jar.svg');
+}
+
+.card__item-2 {
+  background-image: url('../../image/products/apples.svg');
+}
+
+.card__item-3 {
+  background-image: url('../../image/products/dish.svg');
+}
+
+.shop__card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--secondary-text-color);
+}
+
+.shop__card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--primary-text-color);
+}
+
+.shop__card-content a {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}

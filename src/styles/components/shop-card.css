@@ -19,7 +19,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.shop__card-item {
+.shop__card-content {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -29,7 +29,7 @@
   border: 1px solid var(--light-grey-color);
 }
 
-.shop__card-content {
+.shop__card-item {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -38,15 +38,15 @@
 }
 
 .card__item-1 {
-  background-image: url('../../image/products/candy_jar.svg');
+  background-image: url('../../image/card/candy_jar.svg');
 }
 
 .card__item-2 {
-  background-image: url('../../image/products/apples.svg');
+  background-image: url('../../image/card/apples.svg');
 }
 
 .card__item-3 {
-  background-image: url('../../image/products/dish.svg');
+  background-image: url('../../image/card/dish.svg');
 }
 
 .shop__card-text {
@@ -63,7 +63,7 @@
   color: var(--primary-text-color);
 }
 
-.shop__card-content a {
+.shop__card-item a {
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;

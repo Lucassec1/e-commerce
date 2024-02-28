@@ -1,0 +1,151 @@
+@import url('../colors/colors.css');
+
+.product__card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.product__card-row {
+  display: flex;
+  width: 65%;
+  margin: auto;
+  gap: 32px;
+}
+
+.product__card-background {
+  flex: 0 0 auto;
+  position: relative; 
+}
+
+.product__card-background img {
+  width: 100%;
+  height: auto;
+}
+
+.product__card-content {
+  flex-grow: 1;
+}
+
+.product__card-span {
+  position: absolute;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  top: 24px;
+  left: 48px; 
+}
+
+.product__card-category, 
+.product__card-item-count,
+.product__card-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.product__card-category {
+  color: var(--primary-text-color);
+}
+
+.product__card-item-count,
+.product__card-text {
+  color: var(--secondary-text-color);
+}
+
+.product__card-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__card-nav-title {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product__card-nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.product__card-nav-item {
+  align-items: center; 
+  display: flex;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.product__card-nav-item a {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.product__card-nav-item + .product__card-nav-item {
+  margin-left: 3rem;
+}
+
+#product__card-item-active a {
+  color: var(--primary-color);
+}
+
+.product__card-button {
+  display: flex;
+  gap: 1rem;
+}
+
+.product__card-button-prev,
+.product__card-button-next {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.product__card-divider {
+  border-top: 1px solid var(--light-grey-color);
+  margin: 10px 0;
+}
+
+#product__card-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#product__card-items .product__card-item {
+  flex: 0 0 calc(33.33% - 10px);
+  margin-top: 16px;
+}
+
+.product__card-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.product__card-title,
+.product__card-previous-price,
+.product__card-current-price {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product__card-title {
+  color: var(--primary-text-color);
+}
+
+.product__card-price {
+  display: flex;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+.product__card-previous-price {
+  color: var(--muted-color);
+}
+
+.product__card-current-price {
+  color: var(--secondary-color);
+}

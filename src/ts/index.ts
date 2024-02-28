@@ -1,4 +1,6 @@
 import Slide from "./carrousel/slide.js";
+import ProductService from "./data/productService.js";
+import Products from "./data/product.js";
 
 const SLIDE_TIME = 5000;
 
@@ -18,3 +20,9 @@ if (container && elements && elements.children.length && controls) {
 } else {
   console.error("One or more required elements are missing");
 }
+
+const productService = new ProductService();
+
+for (const product of Products) {
+  productService.renderProduct(product);
+};

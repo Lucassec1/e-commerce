@@ -71,26 +71,66 @@
 
   <section class="shop__card">
     <div class="shop__card-row">
-      <div class="shop__card-item card__item-1">
-        <div class="shop__card-content">
+      <div class="shop__card-content card__item-1">
+        <div class="shop__card-item">
           <span class="shop__card-text">Your Space</span>
           <h1 class="shop__card-title">Unique Life</h1>
           <a href="#">Explore Items</a>
         </div>
       </div>
-      <div class="shop__card-item card__item-2">
-        <div class="shop__card-content">
+      <div class="shop__card-content card__item-2">
+        <div class="shop__card-item">
           <span class="shop__card-text">Ends Today</span>
           <h1 class="shop__card-title">Elements Style</h1>
           <a href="#">Explore Items</a>
         </div>
       </div>
-      <div class="shop__card-item card__item-3">
-        <div class="shop__card-content">
+      <div class="shop__card-content card__item-3">
+        <div class="shop__card-item">
           <span class="shop__card-text">Ends Today</span>
           <h1 class="shop__card-title">Elements Style</h1>
           <a href="#">Explore Items</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product__card">
+    <div class="product__card-row">
+      <div class="product__card-background">
+        <div class="product__card-span">
+          <span class="product__card-category">FURNITURE</span>
+          <span class="product__card-item-count">5 Itens</span>
+        </div>
+        <img src="./src/image/background/card-cover-1.svg" alt="Card">
+      </div>
+      <div class="product__card-content">
+        <div class="product__card-nav">
+          <h1 class="product__card-nav-title">BESTSELLER PRODUCTS</h1>
+          <nav class="product__card-nav-header">
+            <ul class="product__card-nav-menu">
+              <li class="product__card-nav-item" id="product__card-item-active">
+                <a href="#">Men</a>
+              </li>
+              <li class="product__card-nav-item">
+                <a href="#">Women</a>
+              </li>
+              <li class="product__card-nav-item">
+                <a href="#">Accessories</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="product__card-button">
+            <button class="product__card-button-prev">
+              <img src="./src/image/icons/previous-rounded.svg" alt="Previous Rounded">
+            </button>
+            <button class="product__card-button-next">
+              <img src="./src/image/icons/next-rounded.svg" alt="Next Rounded">
+            </button>
+          </div>
+        </div>
+        <div class="product__card-divider"></div>
+        <div id="product__card-items"></div>
       </div>
     </div>
   </section>

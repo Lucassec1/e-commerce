@@ -28,14 +28,13 @@
 
 #slide__elements > * {
   grid-area: 1/1;
-  height: 100vh;
   opacity: 0;
   visibility: hidden;
 }
 
 #slide__elements img {
   display: block;
-  max-height: 800px;	
+  height: 600px;	
   width: 100%;
   object-fit: cover;
 }
@@ -47,11 +46,11 @@
 
 .slide__items {
   position: relative;
-  max-height: 800px;
+  height: 100%;
 }
 
 .slide__items img {
-  height: 800px;
+  height: 100%;
 }
 
 .slide__content {

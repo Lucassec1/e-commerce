@@ -1,16 +1,13 @@
 @import url('../colors/colors.css');
 
 .shop__card {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  background-color: var(--light-grey-background-color);
 }
 
 .shop__card-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 16px;
-  width: 70%;
   padding: 80px 0;
 }
 
@@ -24,7 +21,6 @@
   align-items: center;
   justify-content: flex-start;
   background-size: cover;
-  max-width: 333px;
   height: 232px;
   border: 1px solid var(--light-grey-color);
 }

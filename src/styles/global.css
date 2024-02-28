@@ -10,3 +10,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+
+.c-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}

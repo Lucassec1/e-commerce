@@ -1,20 +1,14 @@
 @import url('../colors/colors.css');
 
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .header__wrapper {
   align-items: center;
   display: flex;
   gap: 4rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-inline: auto;
-  margin-top: 2rem;
   max-width: 1440px;
   width: 100%;
+  padding: 20px;
 }
 
 .header__title {
@@ -67,10 +61,6 @@
   align-items: center;
   display: flex;
   text-decoration: none;
-}
-
-.header__menu-link--single {
-  justify-content: flex-start;
 }
 
 .header__menu-text {

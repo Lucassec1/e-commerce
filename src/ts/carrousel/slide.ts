@@ -111,11 +111,11 @@ export default class Slide {
   }
 
   private addControls() {
-    const prevButton = this.createButton("src/image/icons/previous.svg", () => this.pause(), () => this.prev());
+    const prevButton = this.createButton("./src/assets/icons/previous.svg", () => this.pause(), () => this.prev());
     prevButton.classList.add("c-prev__button");
     this.controls.appendChild(prevButton);
   
-    const nextButton = this.createButton("src/image/icons/next.svg", () => this.pause(), () => this.next());
+    const nextButton = this.createButton("./src/assets/icons/next.svg", () => this.pause(), () => this.next());
     nextButton.classList.add("c-next__button");
     this.controls.appendChild(nextButton);
   

@@ -17,17 +17,17 @@ export default class FeaturedPostComponent {
         <p class="c-post__text">${post.content}</p>
         <div class="c-post__public">
           <div class="c-post__date">
-            <img src="./src/image/icons/clock.svg" alt="Clock">
+            <img src="./src/assets/icons/clock.svg" alt="Clock">
             <span class="c-post__date--info">${post.data}</span>
           </div>
           <div class="c-post__comments">
-            <img src="./src/image/icons/comments.svg" alt="Comments">
+            <img src="./src/assets/icons/comments.svg" alt="Comments">
             <span class="c-post__comments--info">${post.commentNumber} comments</span>
           </div>
         </div>
         <div class="c-post__learn--more">
           <a href="#">Learn More</a>
-          <img src="./src/image/icons/learn-more.svg" alt="Learn more">
+          <img src="./src/assets/icons/learn-more.svg" alt="Learn more">
         </div>
       </div>
     `;

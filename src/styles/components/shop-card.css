@@ -34,15 +34,15 @@
 }
 
 .c-card__item--1 {
-  background-image: url('../../image/card/candy_jar.svg');
+  background-image: url('../../assets/images/candy_jar.svg');
 }
 
 .c-card__item--2 {
-  background-image: url('../../image/card/apples.svg');
+  background-image: url('../../assets/images/apples.svg');
 }
 
 .c-card__item--3 {
-  background-image: url('../../image/card/dish.svg');
+  background-image: url('../../assets/images/dish.svg');
 }
 
 .c-shop__card--text {

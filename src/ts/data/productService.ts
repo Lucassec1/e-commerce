@@ -12,7 +12,7 @@ export default class ProductService {
     currentPrice: 'product__card-current-price',
   };
 
-  constructor(containerId: string = 'product__card-items') {
+  constructor(containerId: string) {
     const containerElement = document.getElementById(containerId);
     if (!containerElement) {
       throw new Error(`Element with id "${containerId}" not found.`);

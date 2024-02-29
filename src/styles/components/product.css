@@ -4,6 +4,7 @@
   display: flex;
   margin: auto;
   gap: 32px;
+  padding: 50px 0;
 }
 
 .product__card-background {
@@ -100,22 +101,24 @@
   margin: 10px 0;
 }
 
-#product__card-items {
+#product__card-items,
+#product__card-items-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-#product__card-items .product__card-item {
+#product__card-items .product__card-item,
+#product__card-items-2 .product__card-item {
   flex: 0 0 calc(33.33% - 10px);
-  margin-top: 16px;
 }
 
 .product__card-item {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 10px;
+  gap: 16px;
+  padding: 10px 0;
 }
 
 .product__card-title,

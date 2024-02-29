@@ -21,8 +21,10 @@ if (container && elements && elements.children.length && controls) {
   console.error("One or more required elements are missing");
 }
 
-const productService = new ProductService();
+const productService1 = new ProductService('product__card-items');
+const productService2 = new ProductService('product__card-items-2');
 
 for (const product of Products) {
-  productService.renderProduct(product);
-};
+  productService1.renderProduct(product);
+  productService2.renderProduct(product);
+}

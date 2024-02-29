@@ -4,12 +4,12 @@ export default class ProductService {
   private container: HTMLElement;
 
   private static readonly CSS_CLASSES = {
-    productCard: 'product__card-item',
-    title: 'product__card-title',
-    text: 'product__card-text',
-    priceContainer: 'product__card-price',
-    previousPrice: 'product__card-previous-price',
-    currentPrice: 'product__card-current-price',
+    productCard: 'c-product__card--item',
+    title: 'c-product__card--title',
+    text: 'c-product__card--text',
+    priceContainer: 'c-product__card--price',
+    previousPrice: 'c-product__card--previous-price',
+    currentPrice: 'c-product__card--current-price',
   };
 
   constructor(containerId: string) {

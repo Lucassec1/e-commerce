@@ -1,22 +1,22 @@
 @import url('../colors/colors.css');
 
-.shop__card {
+.c-shop__card {
   background-color: var(--light-grey-background-color);
 }
 
-.shop__card-row {
+.c-shop__card--row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 16px;
   padding: 80px 0;
 }
 
-.shop__card-item {
+.c-shop__card--item {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.shop__card-content {
+.c-shop__card--content {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -25,7 +25,7 @@
   border: 1px solid var(--light-grey-color);
 }
 
-.shop__card-item {
+.c-shop__card--item {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -33,33 +33,33 @@
   width: 45%;
 }
 
-.card__item-1 {
+.c-card__item--1 {
   background-image: url('../../image/card/candy_jar.svg');
 }
 
-.card__item-2 {
+.c-card__item--2 {
   background-image: url('../../image/card/apples.svg');
 }
 
-.card__item-3 {
+.c-card__item--3 {
   background-image: url('../../image/card/dish.svg');
 }
 
-.shop__card-text {
+.c-shop__card--text {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: var(--secondary-text-color);
 }
 
-.shop__card-title {
+.c-shop__card--title {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
   color: var(--primary-text-color);
 }
 
-.shop__card-item a {
+.c-shop__card--item a {
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;

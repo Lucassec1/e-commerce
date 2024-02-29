@@ -1,6 +1,6 @@
 @import url('../colors/colors.css');
 
-.header__wrapper {
+.c-header__wrapper {
   align-items: center;
   display: flex;
   gap: 4rem;
@@ -9,42 +9,43 @@
   max-width: 1440px;
   width: 100%;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
-.header__title {
+.c-header__title {
   color: var(--primary-text-color);
   font-size: 24px;
   line-height: 32px;
 }
 
-.header__nav {
+.c-header__nav {
   inset-inline-start: 0;
   position: sticky;
 }
 
-.header__menu {
+.c-header__menu {
   display: flex;
   list-style: none;
 }
 
-.header__menu-item {
+.c-header__menu--item {
   align-items: center; 
   display: flex;
   font-size: 14px;
   line-height: 24px;
 }
 
-.header__menu-item a {
+.c-header__menu--item a {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
 
-.header__menu-item + .header__menu-item,
-.header__menu-item .header__menu-link {
+.c-header__menu--item + .c-header__menu--item,
+.c-header__menu--item .c-header__menu--link {
   margin-left: 1rem;
 }
 
-.header__menu-select {
+.c-header__menu--select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -57,16 +58,16 @@
   padding-right: 1rem; 
 }
 
-.header__menu-link {
+.c-header__menu--link {
   align-items: center;
   display: flex;
   text-decoration: none;
 }
 
-.header__menu-text {
+.c-header__menu--text {
   color: var(--primary-color);
 }
 
-.header__menu-img + .header__menu-text {
+.c-header__menu--img + .c-header__menu--text {
   margin-left: 0.3rem;
 }

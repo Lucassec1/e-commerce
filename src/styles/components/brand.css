@@ -1,16 +1,16 @@
 @import url('../colors/colors.css');
 
-.brands {
+.c-brands {
   padding: 56px 40px;
   background-color: var(--light-grey-background-color);
 }
 
-.brand__clients {
+.c-brand__clients {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.brand__clients img {
+.c-brand__clients img {
   flex: 0 0 calc(16.6% - 80px);
 }

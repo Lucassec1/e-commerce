@@ -66,7 +66,7 @@ export default class Slide {
   }
 
   pause() {
-    document.getElementById("slide")!.classList.add("paused");
+    document.getElementById("c-slide")!.classList.add("paused");
     this.pausedTimeout = new Timeout(() => {
       this.timeout?.pause();
       this.paused = true;
@@ -75,7 +75,7 @@ export default class Slide {
   }
 
   continue() {
-    document.getElementById("slide")!.classList.remove("paused");
+    document.getElementById("c-slide")!.classList.remove("paused");
     this.pausedTimeout?.clear();
     if (this.paused) {
       this.paused = false;
@@ -106,16 +106,17 @@ export default class Slide {
       pointerDownHandler();
     });
     image.addEventListener("pointerup", pointerUpHandler);
+    
     return button;
   }
 
   private addControls() {
     const prevButton = this.createButton("src/image/icons/previous.svg", () => this.pause(), () => this.prev());
-    prevButton.classList.add("prev__button");
+    prevButton.classList.add("c-prev__button");
     this.controls.appendChild(prevButton);
   
     const nextButton = this.createButton("src/image/icons/next.svg", () => this.pause(), () => this.next());
-    nextButton.classList.add("next__button");
+    nextButton.classList.add("c-next__button");
     this.controls.appendChild(nextButton);
   
     this.container.addEventListener("pointerdown", () => this.pause());
@@ -125,16 +126,16 @@ export default class Slide {
 
   private addTumbItems() {
     const thumbContainer = document.createElement("div");
-    thumbContainer.id = "slide__thumb";
+    thumbContainer.id = "c-slide__thumb";
     for (let i = 0; i < this.slides.length; i++) {
       thumbContainer.innerHTML += `
       <span>
-        <span class="slide__thumb-item"></span>
+        <span class="c-slide__thumb--item"></span>
       </span>
       `;
     }
     this.controls.appendChild(thumbContainer);
-    this.thumbItems = Array.from(document.querySelectorAll(".slide__thumb-item"));
+    this.thumbItems = Array.from(document.querySelectorAll(".c-slide__thumb--item"));
   }
 
   private init() {

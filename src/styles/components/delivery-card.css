@@ -1,24 +1,24 @@
 @import url('../colors/colors.css');
 
-.delivery__card {
+.c-delivery__card {
   padding: 50px 0;
 }
 
-.delivery__card-content {
+.c-delivery__card--content {
   display: flex;
 }
 
-.delivery__card-content img {
+.c-delivery__card--content img {
   width: 100%;
   height: auto; 
   padding: 30px 0;
 }
 
-.delivery__card-item {
+.c-delivery__card--item {
   flex-grow: 1;
 }
 
-.delivery__card-item {
+.c-delivery__card--item {
   display: flex;
   margin: auto 0;
   flex-direction: column;
@@ -27,17 +27,17 @@
   text-align: center;
 }
 
-.delivery__card-item img {
+.c-delivery__card--item img {
   padding: 25px 0;
 }
 
-.delivery__card-title {
+.c-delivery__card--title {
   color: var(--primary-text-color);
   font-size: 24px;
   line-height: 32px;
 }
 
-.delivery__card-text {
+.c-delivery__card--text {
   color: var(--secondary-text-color);
   font-size: 14px;
   font-weight: 400;
@@ -45,61 +45,61 @@
   width: 70%;
 }
 
-.delivery__card-instructions {
+.c-delivery__card--instructions {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.delivery__card-instruction {
+.c-delivery__card--instruction {
   display: flex;
   gap: 20px;
   padding: 25px 40px;
 }
 
-.delivery__card-step {
+.c-delivery__card--step {
   color: var(--danger-text-color);
   font-size: 40px;
   line-height: 50px;
 }
 
-.delivery__card-step-title,
-.delivery__card-category {
+.c-delivery__card--step-title,
+.c-delivery__card--category {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 24px;
 }
 
-.delivery__card-step-text {
+.c-delivery__card--step-text {
   color: var(--secondary-text-color);
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 
-.delivery__card-sales {
+.c-delivery__card--sales {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.delivery__card-sales img {
+.c-delivery__card--sales img {
   width: auto;
   height: auto;
 }
 
-.delivery__card-sales-value {
+.c-delivery__card--sales-value {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 24px;
 }
 
-.delivery__card-colors {
+.c-delivery__card--colors {
   display: flex;
   margin: 8px auto;
   gap: 10px;
 }
 
-.delivery__card-color {
+.c-delivery__card--color {
   width: 16px;
   height: 16px;
   border-radius: 50%;

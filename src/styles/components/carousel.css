@@ -1,6 +1,6 @@
 @import url('../colors/colors.css');
 
-#slide {
+#c-slide {
   background-color: var(--dark-background-color);
   display: grid;
   margin: 0 auto;
@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-#slide.paused {
+#c-slide.paused {
   -webkit-text-size-adjust: none;
   -webkit-touch-callout: none !important;
   -webkit-user-select: none;
@@ -16,44 +16,44 @@
   user-select: none;
 }
 
-#slide.paused #slide__thumb {
+#c-slide.paused #c-slide__thumb {
   opacity: 0;
   transition: 250ms cubic-bezier(.17, .67, .83, .67);
 }
 
-#slide__elements {
+#c-slide__elements {
   display: grid;
   grid-area: 1/1;
 }
 
-#slide__elements > * {
+#c-slide__elements > * {
   grid-area: 1/1;
   opacity: 0;
   visibility: hidden;
 }
 
-#slide__elements img {
+#c-slide__elements img {
   display: block;
   height: 600px;	
   width: 100%;
   object-fit: cover;
 }
 
-#slide__elements > .active {
+#c-slide__elements > .active {
   opacity: 1;
   visibility: visible;
 }
 
-.slide__items {
+.c-slide__items {
   position: relative;
   height: 100%;
 }
 
-.slide__items img {
+.c-slide__items img {
   height: 100%;
 }
 
-.slide__content {
+.c-slide__content {
   display: block;
   position: absolute;
   top: 50%;
@@ -64,12 +64,12 @@
   z-index: 1;
 }
 
-.slide__content-title {
+.c-slide__content--title {
   font-size: 58px;
   line-height: 80px;
 }
 
-.slide__content-text {
+.c-slide__content--text {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -78,7 +78,7 @@
   margin-bottom: 10px;
 }
 
-.slide__content-button {
+.c-slide__content--button {
   background-color: var(--primary-color);
   padding: 15px 40px;
   border: none;
@@ -90,14 +90,14 @@
   color: var(--light-text-color);
 }
 
-#slide__controls {
+#c-slide__controls {
   display: grid;
   grid-area: 1/1;
   grid-template-columns: 1fr 1fr;
   position: relative;
 }
 
-#slide__controls button {
+#c-slide__controls button {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -106,15 +106,15 @@
   position: relative;
 }
 
-#slide__controls > .prev__button {
+#c-slide__controls > .c-prev__button {
   margin-right: auto;
 }
 
-#slide__controls > .next__button {
+#c-slide__controls > .c-next__button {
   margin-left: auto;
 }
 
-#slide__thumb {
+#c-slide__thumb {
   display: flex;
   margin: auto;
   position: absolute;
@@ -125,7 +125,7 @@
   pointer-events: none;
 }
 
-#slide__thumb > span {
+#c-slide__thumb > span {
   background-color: var(--light-background-color-semi);
   display: block;
   flex: 1;
@@ -135,7 +135,7 @@
   overflow: hidden;
 }
 
-#slide__thumb .slide__thumb-item.active {
+#c-slide__thumb .c-slide__thumb--item.active {
   animation: thumb forwards linear running;
   background-color: var(--light-background-color);
   display: block;
@@ -143,7 +143,7 @@
   transform: translateX(-100%);
 }
 
-#slide__thumb .slide__thumb-item.paused {
+#c-slide__thumb .c-slide__thumb--item.paused {
   animation-play-state: paused;
 }
 

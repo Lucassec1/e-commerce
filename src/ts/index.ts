@@ -6,9 +6,9 @@ import FeaturedPostComponent from "./featuredPost/featuredPostService.js";
 
 const SLIDE_TIME = 5000;
 
-const container = document.getElementById("slide");
-const elements = document.getElementById("slide__elements");
-const controls = document.getElementById("slide__controls");
+const container = document.getElementById("c-slide");
+const elements = document.getElementById("c-slide__elements");
+const controls = document.getElementById("c-slide__controls");
 
 if (container && elements && elements.children.length && controls) {
   const slide = new Slide(
@@ -23,8 +23,8 @@ if (container && elements && elements.children.length && controls) {
   console.error("One or more required elements are missing");
 }
 
-const productService1 = new ProductService('product__card-items');
-const productService2 = new ProductService('product__card-items-2');
+const productService1 = new ProductService('c-product__card--items');
+const productService2 = new ProductService('c-product__card--items-2');
 
 for (const product of Products) {
   productService1.renderProduct(product);

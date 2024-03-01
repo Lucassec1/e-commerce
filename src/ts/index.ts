@@ -1,6 +1,6 @@
 import Slide from "./carrousel/slide.js";
-import ProductService from "./data/productService.js";
-import Products from "./data/product.js";
+import ProductService from "./product/productService.js";
+import Products from "./product/product.js";
 import { FeaturedPostService } from "./featuredPost/featuredPost.js";
 import FeaturedPostComponent from "./featuredPost/featuredPostService.js";
 

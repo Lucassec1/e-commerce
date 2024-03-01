@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "lite-server",
     "build": "tsc"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lite-server": "^2.6.1",
     "typescript": "^5.3.3"
   }
 }

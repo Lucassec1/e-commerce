@@ -14,3 +14,4 @@ export interface FeaturedPostData {
   commentNumber: number;
   isNew: boolean;
 }
+
